@@ -48,6 +48,7 @@
         // تهيئة Firebase
         const app = firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
+        const storageRef = firebaseApp.storage().ref();
 
         // وظيفة لإضافة البيانات إلى Firestore
         function addData() {
